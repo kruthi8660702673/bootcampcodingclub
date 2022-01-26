@@ -1,0 +1,7 @@
+RANGE=$5
+RANDOM=$$
+R=$(($(($RANDOM%5))+1))
+RANDOM=$$
+s=$(($(($RANDOM%5))+1))
+
+echo "sum of two random numbers of $R and $s is = " $(($R+$s))

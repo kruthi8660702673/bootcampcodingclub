@@ -1,0 +1,12 @@
+for item in `ls -I *.sh`
+do
+	filename=`echo $item | awk -F. '{ print$1 }'`
+	extensionname=`echo $item | gawk -F. '{ print$2 }'`
+	if [ ! -d $filename ]
+	then
+	mkdir -p "$filename/$extensionname"	
+	mv $item $filename/$extensionname
+	fi
+	
+	echo
+done

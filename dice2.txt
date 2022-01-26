@@ -1,0 +1,9 @@
+RANDOM=$$
+for i in seq5
+do
+R=$(($RANDOM%100))
+sum=$(($sum+$R))
+
+done
+avg=$(($sum/5))
+echo "$avg"

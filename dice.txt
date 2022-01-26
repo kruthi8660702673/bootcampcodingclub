@@ -1,0 +1,6 @@
+echo "lower limit:"
+echo "upper limit:"
+RANGE=$((6-1+1))
+RANDOM=$$
+R=$(($(($RANDOM%$RANGE))+1))
+echo "The random integer is $R"
